@@ -1,5 +1,7 @@
 import classes from './header.module.scss';
 import { Link, useNavigate } from 'react-router';
+import chevronRight from '../../../assets/img/chevron-right.svg';
+import chevronDown from '../../../assets/img/chevron-down.svg';
 
 interface NavItemProps {
   label: string;
@@ -21,7 +23,7 @@ export const NavItem = ({ label, path, items }: NavItemProps) => {
         {label}
 
         {items?.length && (
-          <img src="/chevron-down.svg" width="10" height="6" alt=""/>
+          <img src={chevronDown} width="10" height="6" alt=""/>
         )}
       </button>
 
@@ -31,7 +33,7 @@ export const NavItem = ({ label, path, items }: NavItemProps) => {
             <Link key={index} to="#" className={classes.header_nav_item_link}>
               {item.label}
 
-              <img src="/chevron-right.svg" width="8" height="5" alt=""/>
+              <img src={chevronRight} width="8" height="5" alt=""/>
             </Link>
           ))}
         </div>

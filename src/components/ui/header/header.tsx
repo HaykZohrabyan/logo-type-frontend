@@ -3,6 +3,9 @@ import { Link } from 'react-router';
 import { useAppContext } from '../../../context/app-context.tsx';
 import { useEffect, useState } from 'react';
 import { HeaderNav } from './header-nav.tsx';
+import logoSvg from '../../../assets/img/logo.svg'
+import burgerSvg from '../../../assets/img/burger.svg'
+import searchSvg from '../../../assets/img/search.svg'
 
 export const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
@@ -39,11 +42,11 @@ export const Header = () => {
                   className={classes.header_menu_btn}
                   onClick={() => setMenuShown(true)}
                 >
-                  <img src="/burger.svg" width="25" height="16" alt="menu"/>
+                  <img src={burgerSvg} width="25" height="16" alt="menu"/>
                 </button>
 
                 <Link to={'/'} className={classes.header_logo}>
-                  <img src="/logo.svg" width="181" height="21" alt="logo"/>
+                  <img src={logoSvg} width="181" height="21" alt="logo"/>
                 </Link>
 
                 <div className={classes.header_search}>
@@ -60,7 +63,7 @@ export const Header = () => {
                     className={classes.header_search_button}
                     onClick={() => setIsSearchOpen((prev) => !prev)}
                   >
-                    <img src="/search.svg" width="16" height="16" alt="search"/>
+                    <img src={searchSvg} width="16" height="16" alt="search"/>
                   </button>
                 </div>
               </div>
