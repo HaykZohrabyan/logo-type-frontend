@@ -5,7 +5,7 @@ export const App = () => {
   return (
     <main className="page-wrapper">
       <Header/>
-      <AppRouter />
+      <AppRouter/>
     </main>
   );
 };
