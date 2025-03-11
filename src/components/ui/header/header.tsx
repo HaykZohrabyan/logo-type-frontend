@@ -39,11 +39,11 @@ export const Header = () => {
                   className={classes.header_menu_btn}
                   onClick={() => setMenuShown(true)}
                 >
-                  <img src="/images/burger.svg" width="25" height="16" alt="menu"/>
+                  <img src="/burger.svg" width="25" height="16" alt="menu"/>
                 </button>
 
                 <Link to={'/'} className={classes.header_logo}>
-                  <img src="/images/logo.svg" width="181" height="21" alt="logo"/>
+                  <img src="/logo.svg" width="181" height="21" alt="logo"/>
                 </Link>
 
                 <div className={classes.header_search}>
@@ -60,7 +60,7 @@ export const Header = () => {
                     className={classes.header_search_button}
                     onClick={() => setIsSearchOpen((prev) => !prev)}
                   >
-                    <img src="/images/search.svg" width="16" height="16" alt="search"/>
+                    <img src="/search.svg" width="16" height="16" alt="search"/>
                   </button>
                 </div>
               </div>

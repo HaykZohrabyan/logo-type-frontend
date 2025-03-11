@@ -21,7 +21,7 @@ export const NavItem = ({ label, path, items }: NavItemProps) => {
         {label}
 
         {items?.length && (
-          <img src="/images/chevron-down.svg" width="10" height="6" alt=""/>
+          <img src="/chevron-down.svg" width="10" height="6" alt=""/>
         )}
       </button>
 
@@ -31,7 +31,7 @@ export const NavItem = ({ label, path, items }: NavItemProps) => {
             <Link key={index} to="#" className={classes.header_nav_item_link}>
               {item.label}
 
-              <img src="/images/chevron-right.svg" width="8" height="5" alt=""/>
+              <img src="/chevron-right.svg" width="8" height="5" alt=""/>
             </Link>
           ))}
         </div>

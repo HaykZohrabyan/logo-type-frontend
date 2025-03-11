@@ -14,14 +14,14 @@ export const HeaderNav = ({ menuShown, setMenuShown }: HeaderNavProps) => {
       <nav className={`${classes.header_nav} ${menuShown && classes.header_nav_show}`}>
         <div className={classes.header_nav_head}>
           <Link to="/" className={classes.header_logo}>
-            <img src="/images/logo.svg" width="161" height="24" alt="logo"/>
+            <img src="/logo.svg" width="161" height="24" alt="logo"/>
           </Link>
 
           <button
             className={classes.header_nav_close}
             onClick={() => setMenuShown(false)}
           >
-            <img src="/images/close.svg" width="18" height="18" alt=""/>
+            <img src="/close.svg" width="18" height="18" alt=""/>
           </button>
         </div>
         <div className="container">
