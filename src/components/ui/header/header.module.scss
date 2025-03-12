@@ -106,7 +106,7 @@
 
   @media (max-width: 768px) {
     position: absolute;
-    left: -100%;
+    left: -320px;
     height: 100dvh;
     width: 320px;
     z-index: 2;
@@ -189,6 +189,7 @@
   align-items: center;
   gap: 4px;
   padding: 20px 0;
+  color: var(--black);
 
   @media (max-width: 768px) {
     padding: 0 0 16px 0;
@@ -222,6 +223,7 @@
 }
 
 .header_nav_item_link {
+  color: var(--black);
   font-size: 0.813rem;
   display: flex;
   align-items: center;

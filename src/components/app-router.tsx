@@ -4,7 +4,7 @@ import { Home } from '../pages/home.tsx';
 export const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home/>}/>
     </Routes>
   );
 };

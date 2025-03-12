@@ -1,6 +1,7 @@
 import classes from './modal.module.scss';
 import { ReactNode, useEffect } from 'react';
 import { createPortal } from 'react-dom';
+import closeSvg from '../../../assets/img/close.svg';
 
 interface ModalProps {
   open: boolean;
@@ -28,7 +29,7 @@ export const Modal = ({ open, children, setIsOpen }: ModalProps) => {
           className={classes.modal_close}
           onClick={() => setIsOpen(false)}
         >
-          <img src="/close.svg" width="12" height="12" alt=""/>
+          <img src={closeSvg} width="12" height="12" alt=""/>
         </button>
         {children}
       </div>
