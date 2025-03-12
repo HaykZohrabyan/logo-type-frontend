@@ -3,10 +3,10 @@ import { Link } from 'react-router';
 import { useAppContext } from '../../../context/app-context.tsx';
 import { useEffect, useState } from 'react';
 import { HeaderNav } from './header-nav.tsx';
-import logoSvg from '../../../assets/img/logo.svg'
-import burgerSvg from '../../../assets/img/burger.svg'
-import searchSvg from '../../../assets/img/search.svg'
-import closeSvg from '../../../assets/img/close.svg'
+import logoSvg from '../../../assets/img/logo.svg';
+import burgerSvg from '../../../assets/img/burger.svg';
+import searchSvg from '../../../assets/img/search.svg';
+import closeSvg from '../../../assets/img/close.svg';
 
 export const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
