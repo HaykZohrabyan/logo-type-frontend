@@ -6,6 +6,7 @@ import { HeaderNav } from './header-nav.tsx';
 import logoSvg from '../../../assets/img/logo.svg'
 import burgerSvg from '../../../assets/img/burger.svg'
 import searchSvg from '../../../assets/img/search.svg'
+import closeSvg from '../../../assets/img/close.svg'
 
 export const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
@@ -63,7 +64,12 @@ export const Header = () => {
                     className={classes.header_search_button}
                     onClick={() => setIsSearchOpen((prev) => !prev)}
                   >
-                    <img src={searchSvg} width="16" height="16" alt="search"/>
+                    <img
+                      src={isSearchOpen ? closeSvg : searchSvg}
+                      width="16"
+                      height="16"
+                      alt="search"
+                    />
                   </button>
                 </div>
               </div>
